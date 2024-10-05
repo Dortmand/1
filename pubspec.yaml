@@ -1,28 +1,24 @@
-name: expiration_tracker
-description: A Flutter application to track expiration dates of products.
-
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
-version: 1.0.0+1
+name: your_app_name  # Замените на имя вашего приложения
+description: A Flutter application to manage product expiration dates.
 
 environment:
-  sdk: ">=3.5.0 <4.0.0" # Убедитесь, что версия SDK подходит для вашего проекта
+  sdk: ">=2.12.0 <3.0.0"  # Убедитесь, что версия SDK соответствует вашей версии Flutter
 
 dependencies:
   flutter:
     sdk: flutter
-  # Зависимости для работы с изображениями
-  image_picker: ^0.8.5+3 # Для выбора изображений
-  # Зависимость для работы с ML (опционально, если вы хотите использовать ML для распознавания текста)
-  google_ml_kit: ^0.7.0 
-  # Зависимость для локальных уведомлений
-  flutter_local_notifications: ^9.5.0 
+  flutter_local_notifications: ^9.9.1  # Пакет для уведомлений
+  google_ml_kit: ^0.18.1                # Пакет для работы с машинным обучением
+  http: ^1.2.2                           # Пакет для HTTP-запросов
+  image_picker: ^1.1.2                   # Пакет для выбора изображений
+  file_picker: ^5.0.0                    # Пакет для выбора файлов (если понадобится)
+  path_provider: ^2.0.11                  # Пакет для работы с путями файловой системы
+  provider: ^6.0.5                        # Пакет для управления состоянием
+  intl: ^0.18.0                           # Пакет для работы с датами и временем
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-  uses-material-design: true
-
-  # Укажите дополнительные настройки для вашего проекта, если необходимо
+  uses-material-design: true  # Включает поддержку Material Design
