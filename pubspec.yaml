@@ -1,32 +1,29 @@
-name: my_flutter_app #1
+name: my_new_app
 description: A new Flutter project.
 
-# Параметры SDK
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
 environment:
   sdk: ">=2.17.0 <3.0.0"
 
-# Зависимости проекта
 dependencies:
   flutter:
     sdk: flutter
-  image_picker: ^0.8.9
+  flutter_local_notifications: ^9.9.1
   google_ml_kit: ^0.7.3
   http: ^1.2.2
-  flutter_local_notifications: ^9.9.1
-  flutter_local_notifications_linux: ^0.5.1
-  flutter_local_notifications_platform_interface: ^5.0.0
-  path: ^1.9.0
+  image_picker: ^0.8.9
   leak_tracker: ^10.0.5
-  leak_tracker_flutter_testing: ^3.0.5
-  leak_tracker_testing: ^3.0.1
-  timezone: ^0.8.0
-  # Добавьте другие зависимости, если они используются
+  flutter_local_notifications_linux: ^0.5.1 # Для поддержки Linux
+  flutter_local_notifications_platform_interface: ^5.0.0 # Обеспечение совместимости
+  image_picker_android: ^0.8.12+14 # Для поддержки Android
+  image_picker_ios: ^0.8.12 # Для поддержки iOS
 
-# Зависимости для тестирования
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# Укажите используемую версию Flutter
 flutter:
   uses-material-design: true
