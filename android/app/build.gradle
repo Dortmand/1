@@ -1,0 +1,11 @@
+android {
+    compileSdkVersion 33 // Или другая последняя версия
+    ...
+    defaultConfig {
+        applicationId "com.example.your_app" // Убедитесь, что здесь указано правильное имя вашего приложения
+        minSdkVersion 21
+        targetSdkVersion 33 // Или другая последняя версия
+        versionCode 1
+        versionName "1.0"
+    }
+}
