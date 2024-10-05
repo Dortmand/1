@@ -1,24 +1,32 @@
-name: your_app_name  # Замените на имя вашего приложения
-description: A Flutter application to manage product expiration dates.
+name: 1
+description: A new Flutter project.
 
+# Параметры SDK
 environment:
-  sdk: ">=2.12.0 <3.0.0"  # Убедитесь, что версия SDK соответствует вашей версии Flutter
+  sdk: ">=2.17.0 <3.0.0"
 
+# Зависимости проекта
 dependencies:
   flutter:
     sdk: flutter
-  flutter_local_notifications: ^9.9.1  # Пакет для уведомлений
-  google_ml_kit: ^0.18.1                # Пакет для работы с машинным обучением
-  http: ^1.2.2                           # Пакет для HTTP-запросов
-  image_picker: ^1.1.2                   # Пакет для выбора изображений
-  file_picker: ^5.0.0                    # Пакет для выбора файлов (если понадобится)
-  path_provider: ^2.0.11                  # Пакет для работы с путями файловой системы
-  provider: ^6.0.5                        # Пакет для управления состоянием
-  intl: ^0.18.0                           # Пакет для работы с датами и временем
+  image_picker: ^0.8.9
+  google_ml_kit: ^0.7.3
+  http: ^1.2.2
+  flutter_local_notifications: ^9.9.1
+  flutter_local_notifications_linux: ^0.5.1
+  flutter_local_notifications_platform_interface: ^5.0.0
+  path: ^1.9.0
+  leak_tracker: ^10.0.5
+  leak_tracker_flutter_testing: ^3.0.5
+  leak_tracker_testing: ^3.0.1
+  timezone: ^0.8.0
+  # Добавьте другие зависимости, если они используются
 
+# Зависимости для тестирования
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+# Укажите используемую версию Flutter
 flutter:
-  uses-material-design: true  # Включает поддержку Material Design
+  uses-material-design: true
